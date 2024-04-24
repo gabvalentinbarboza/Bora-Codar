@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_7</title>
+</head>
+<body>
+    <script>
+        let soma = 0;
+let numerosInformados = "";
+
+for (let i = 1; i <= 6; i++) {
+    let numero = parseFloat(prompt("Digite o " + i + "º número:"));
+    numerosInformados += numero + ", "; // Adiciona o número informado
+    if (numero < 72) {
+        soma += numero; // Soma apenas números menores que 72
+    }
+}
+
+alert("Todos os números informados: " + numerosInformados);
+alert("Soma dos números menores que 72: " + soma);
+
+    </script>
+    
+</body>
+</html>

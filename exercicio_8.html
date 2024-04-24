@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_8</title>
+</head>
+<body>
+    <script>
+        let soma = 0;
+
+// Solicita ao usuário que informe quatro números
+for (let i = 1; i <= 4; i++) {
+    let numero = parseFloat(prompt("Digite o " + i + "º número:"));
+    
+    // Verifica se o número está entre 0 e 10
+    if (numero > 0 && numero < 10) {
+        soma += numero; // Soma somente se o número estiver entre 0 e 10
+    } else {
+        alert("Número inválido. Tente novamente.");
+        break; // (Quebra)Encerra o programa
+    }
+}
+
+// Calcula a média dos números
+let media = soma / 4;
+
+// Verifica se a média é maior que cinco e exibe a mensagem correspondente
+if (media > 5) {
+    alert("Você passou no teste.");
+} else {
+    alert("Tente novamente.");
+}
+
+    </script>
+    
+</body>
+</html>

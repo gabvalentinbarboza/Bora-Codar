@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_5</title>
+</head>
+<body>
+    <script>
+        let soma = 0;
+let numerosInformados = "";
+
+for (let i = 1; i <= 10; i++) {
+    let valor = parseFloat(prompt("Digite o " + i + "º valor:"));
+    soma += valor;
+    numerosInformados += valor + ". ";
+}
+
+let media = soma / 10;
+
+let mensagem = "Números informados: " + numerosInformados;
+mensagem += "Soma dos valores: " + soma;
+mensagem += "Média aritmética: " + media;
+
+alert(mensagem);
+
+    </script>
+    
+</body>
+</html>

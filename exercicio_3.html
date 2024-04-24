@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_3</title>
+</head>
+<body>
+    <script>
+        // Solicita ao user que informe três números diferentes
+alert("Digite 3 números diferentes");
+let numero1 = parseFloat(prompt("Digite o primeiro número:"));
+let numero2 = parseFloat(prompt("Digite o segundo número (diferente do primeiro):"));
+let numero3 = parseFloat(prompt("Digite o terceiro número (diferente dos dois primeiros):"));
+
+// Verifica qual é o maior número
+if (numero1 > numero2 && numero1 > numero3) {
+    alert("O primeiro número ( " + numero1 + " ) é o maior.");
+} else if (numero2 > numero1 && numero2 > numero3) {
+    alert("O segundo número ( " + numero2 + " ) é o maior.");
+} else {
+    alert("O terceiro número ( " + numero3 + " ) é o maior.");
+}
+
+    </script>
+    
+</body>
+</html>

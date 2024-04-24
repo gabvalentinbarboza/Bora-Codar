@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_9</title>
+</head>
+<body>
+    <script>
+        // Solicita o ano de nascimento
+let anoNascimento = parseInt(prompt("Digite o ano de nascimento:"));
+
+// Ano atual
+let anoAtual = "2024"
+
+// Calcula a idade da pessoa subtraindo o ano de nascimento do ano atual
+let idade = anoAtual - anoNascimento;
+
+// Verifica se a pessoa tem idade suficiente pra votar
+if (idade >= 16) {
+    alert("Você pode votar este ano!");
+} else {
+    alert("Você não pode votar este ano.");
+}
+    </script>
+    
+</body>
+</html>
